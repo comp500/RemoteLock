@@ -20,7 +20,7 @@ func main() {
 	// Handle killswitch endpoint
 	http.HandleFunc("/kill", buttonHandler)
 
-	err := http.ListenAndServe(":3000", nil)
+	err := http.ListenAndServe(":5624", nil)
 	if err != nil {
 		fmt.Printf("Error starting interface server: %v\n", err)
 		os.Exit(1)
